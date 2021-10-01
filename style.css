@@ -1,0 +1,171 @@
+:root {
+    --main-green: #01996D;
+    --main-dark-green: #245852;
+    --main-white: #fff;
+    --main-black: #292929;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15rem;
+    height: 8.5rem;
+}
+
+.header-nav > a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--main-green);
+}
+
+.nav-links {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 3.5rem;
+
+}
+
+.nav-links-item a {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--main-black);
+    text-decoration: none;
+
+}
+
+.nav-links li :last-child {
+    margin-left: 7rem;
+}
+
+.btn {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 5px;
+    background-color: var(--main-green);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    cursor: pointer;
+}
+
+.btn-small {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.btn-large {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.layout {
+    height: 110rem;
+    background-size: 100%;
+    background-image: url(./img/woman.jpg);
+}
+
+.layout-container {
+    padding-top: 30rem;
+    margin-left: 27.5rem;
+    width: 50rem;
+}
+
+.layout-title {
+    font-weight: 700;
+    font-size: 6.5rem;
+    color: var(--main-green);
+    margin-bottom: 3rem;
+}
+
+.layout-text {
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--main-black);
+    margin-bottom: 5rem;
+    line-height: 3.2rem;
+}
+
+
+.representation {
+    height: 92rem;
+    background-color: var(--main-dark-green);
+    color: var(--main-white);
+    margin-bottom: 5rem;
+}
+
+.representation-container {
+    padding-top: 31rem;
+    margin-left: 20rem;
+    width: 60rem;
+}
+
+.representation-title {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 8rem;
+}
+
+.representation-text {
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    margin-top: 3.5rem;
+    margin-bottom: 6rem;
+}
+
+.footer {
+    height: 65rem;
+    background-color: var(--main-dark-green);
+    padding: 9.5rem 27.5rem;
+}
+
+.footer a {
+    color: var(--main-white);
+    text-decoration: none;
+
+}
+
+.footer > a {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.footer-links {
+    list-style: none;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.footer-links-item {
+    margin-top: 6rem;
+}
+
+
+
