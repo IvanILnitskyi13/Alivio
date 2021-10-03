@@ -2,7 +2,8 @@
     --main-green: #01996D;
     --main-dark-green: #245852;
     --main-white: #fff;
-    --main-black: #292929;
+    --main-gray: #292929;
+    --main-black: #000;
 }
 
 *,
@@ -50,7 +51,7 @@ body {
 .nav-links-item a {
     font-size: 2rem;
     line-height: 2.5rem;
-    color: var(--main-black);
+    color: var(--main-gray);
     text-decoration: none;
 
 }
@@ -89,6 +90,7 @@ body {
     height: 110rem;
     background-size: 100%;
     background-image: url(./img/woman.jpg);
+    background-repeat: no-repeat;
 }
 
 .layout-container {
@@ -107,37 +109,170 @@ body {
 .layout-text {
     font-weight: 400;
     font-size: 2rem;
-    color: var(--main-black);
+    color: var(--main-gray);
     margin-bottom: 5rem;
     line-height: 3.2rem;
 }
 
+.solutions {
+    height: 150rem;
+    display: flex;
+    justify-content: center;
+}
 
-.representation {
+.solution-container {
+    margin-top: 10rem;
+    align-items: center;
+    width: 80%;
+}
+
+.heading-content {
+    display: flex;
+    align-items: center;
+}
+
+.heading-caption {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+}
+
+.heading-title {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 7.8rem;
+    color: var(--main-green);
+    width: 58rem;
+}
+
+.heading-description {
+    margin-left: 7rem;
+    padding-top: 4rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--main-gray);
+    width: 67rem;
+}
+
+.solutions-content {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.solutions-card {
+    width: 39rem;
+}
+.card-number-2{
+    margin-top: 20rem
+}
+.card-number-3{
+    margin-top: 5rem
+}
+
+.card-number{
+    font-weight:400;
+    font-size: 15rem;
+    line-height: 22.5rem;
+    color: rgba(1, 153, 109, .2);
+    position: relative;
+}
+
+.card-title{
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+    color: var(--main-black);
+    position: absolute;
+    left: 9.5rem;
+    top: 13.3rem;
+}
+
+.card-description {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: var(--main-gray);
+    margin-bottom: 6rem;
+}
+
+.solutions-img {
+    width: 39rem;
+    border-radius: 5px;
+}
+
+
+.community {
     height: 92rem;
     background-color: var(--main-dark-green);
     color: var(--main-white);
-    margin-bottom: 5rem;
 }
 
-.representation-container {
+.community-container {
     padding-top: 31rem;
     margin-left: 20rem;
     width: 60rem;
 }
 
-.representation-title {
+.community-title {
     font-weight: 700;
     font-size: 5rem;
     line-height: 8rem;
 }
 
-.representation-text {
+.community-text {
     font-weight: 300;
     font-size: 2.5rem;
     line-height: 4rem;
     margin-top: 3.5rem;
     margin-bottom: 6rem;
+}
+
+.pricing {
+    height: 93rem;
+    padding-top: 12rem;
+}
+
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-img {
+    width: 64rem;
+    border-radius: 1rem;
+    margin-right: 8.5rem;
+}
+
+.pricing-content {
+    width: 58rem;
+}
+
+.pricing-header {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    color: var(--main-gray);
+    margin-bottom: 2rem;
+}
+
+.pricing-title {
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 6rem;
+    color: var(--main-green);
+    margin-bottom: 2rem;
+}
+
+.pricing-text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    margin-bottom: 4rem;
+}
+
+.block {
+    display: block;
 }
 
 .footer {
