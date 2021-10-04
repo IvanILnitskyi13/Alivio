@@ -24,39 +24,46 @@ body {
     font-weight: 500;
 }
 
-.header-nav {
+.main-container {
+    width: 125rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 15rem;
-    height: 8.5rem;
+    height: 8.5rem
 }
 
-.header-nav > a {
+.navigation > a {
     text-decoration: none;
     font-weight: 700;
     font-size: 4rem;
     color: var(--main-green);
 }
 
-.nav-links {
+.navigation-links {
     display: flex;
     flex-grow: 2;
     justify-content: flex-end;
     list-style: none;
     margin-right: 3.5rem;
-
 }
 
 .nav-links-item a {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.5rem;
     color: var(--main-gray);
     text-decoration: none;
-
 }
 
-.nav-links li :last-child {
+.nav-links-item:not(:last-child) {
+    margin-right: 6rem;
+}
+
+.nav-links-item:last-child {
     margin-left: 7rem;
 }
 
@@ -88,14 +95,13 @@ body {
 
 .layout {
     height: 110rem;
-    background-size: 100%;
+    background-size: cover;
     background-image: url(./img/woman.jpg);
     background-repeat: no-repeat;
 }
 
-.layout-container {
+.layout-content {
     padding-top: 30rem;
-    margin-left: 27.5rem;
     width: 50rem;
 }
 
@@ -123,12 +129,12 @@ body {
 .solution-container {
     margin-top: 10rem;
     align-items: center;
-    width: 80%;
 }
 
 .heading-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .heading-caption {
@@ -142,7 +148,6 @@ body {
     font-size: 5rem;
     line-height: 7.8rem;
     color: var(--main-green);
-    width: 58rem;
 }
 
 .heading-description {
@@ -151,7 +156,7 @@ body {
     font-size: 2rem;
     line-height: 3rem;
     color: var(--main-gray);
-    width: 67rem;
+    width: 90%;
 }
 
 .solutions-content {
@@ -163,22 +168,24 @@ body {
 .solutions-card {
     width: 39rem;
 }
-.card-number-2{
+
+.card-number-2 {
     margin-top: 20rem
 }
-.card-number-3{
-    margin-top: 5rem
+
+.card-number-3 {
+    margin-top: 5rem;
 }
 
-.card-number{
-    font-weight:400;
+.card-number {
+    font-weight: 400;
     font-size: 15rem;
     line-height: 22.5rem;
     color: rgba(1, 153, 109, .2);
     position: relative;
 }
 
-.card-title{
+.card-title {
     font-size: 2.8rem;
     line-height: 4.5rem;
     color: var(--main-black);
@@ -195,7 +202,7 @@ body {
 }
 
 .solutions-img {
-    width: 39rem;
+    width: 38rem;
     border-radius: 5px;
 }
 
@@ -208,7 +215,6 @@ body {
 
 .community-container {
     padding-top: 31rem;
-    margin-left: 20rem;
     width: 60rem;
 }
 
@@ -281,13 +287,13 @@ body {
     padding: 9.5rem 27.5rem;
 }
 
-.footer a {
+.footer .main-container a {
     color: var(--main-white);
     text-decoration: none;
 
 }
 
-.footer > a {
+.footer .main-container > a {
     font-weight: 900;
     font-size: 4rem;
 }
