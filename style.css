@@ -215,13 +215,19 @@ body {
 
 .community-container {
     padding-top: 31rem;
-    width: 60rem;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .community-title {
     font-weight: 700;
     font-size: 5rem;
     line-height: 8rem;
+}
+.community-video{
+    margin-left: 3rem;
+    width: 65rem;
 }
 
 .community-text {
